@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+class PantallaSeis extends StatefulWidget {
+  const PantallaSeis({Key? key}) : super(key: key);
+
+  @override
+  State<PantallaSeis> createState() => _PantallaSeisState();
+}
+
+class _PantallaSeisState extends State<PantallaSeis> {
+  @override
+  Widget build(BuildContext context) {
+    return 
+    
+    Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          '12',
+          style: TextStyle(
+            color: Colors.black, // Color de la letra blanco
+            fontSize: 25.0, // Tamaño de la letra 15
+          ),
+        ),
+        backgroundColor: Color(0xffed722b),
+        centerTitle: true,
+      ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 20,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text('Regresar'),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    
+    ;
+  }
+}
